@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/submit"
+            android:layout_below="@+id/edit1"
+            android:layout_alignStart="@+id/clear"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/exit"
+            android:layout_below="@+id/edit3"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:text="Reactants"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textSize="20sp"
+        android:text="Products"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/edit2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Balanced Equation"
+        android:textSize="20sp"
+        android:layout_marginTop="76dp"
+        android:layout_below="@+id/edit1"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
